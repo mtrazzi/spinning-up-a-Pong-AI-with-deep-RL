@@ -11,7 +11,7 @@ def prepro(I):
   return I.astype(np.float).ravel()
 
 # reward discount used by Karpathy (cf. https://gist.github.com/karpathy/a4166c7fe253700972fcbc77e4ea32c5)
-def discount_rewards(r):
+def discount_rewards(r, gamma):
   """ take 1D float array of rewards and compute discounted reward """
   r = np.array(r)
   discounted_r = np.zeros_like(r)
