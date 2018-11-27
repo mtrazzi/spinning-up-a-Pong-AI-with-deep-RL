@@ -21,6 +21,6 @@ def discount_rewards(r, gamma):
     if r[t] != 0: running_add = 0 # if the game ended (in Pong), reset the reward sum
     running_add = running_add * gamma + r[t] # the point here is to use Horner's method to compute those rewards efficiently
     discounted_r[t] = running_add
-    discounted_r -= np.mean(discounted_r) #normalizing the result
-    discounted_r /= np.std(discounted_r) #idem
+  discounted_r -= np.mean(discounted_r) #normalizing the result
+  discounted_r /= np.std(discounted_r) #idem
   return discounted_r
