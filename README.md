@@ -31,7 +31,7 @@ The following notebooks (file ending with .ipynb) detail how to train a model in
 
 #FloydHub specific  
   |floyd.yml                               #Tells what to execute when launching a job
-  |floyd_requirements.txt	                 #Necessary packages to install
+  |floyd_requirements.txt                  #Necessary packages to install
   
 #Trained weights
   |my_model_weights.h5                     #Saved weights after training
